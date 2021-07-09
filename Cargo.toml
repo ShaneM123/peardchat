@@ -6,5 +6,6 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-libp2p = "0.38.0"
+libp2p = {version = "0.38.0", features = ["tcp-tokio", "mdns"]}
 futures = "0.3.15"
+tokio = {version = "1.8.1", features = ["io-util", "io-std", "macros", "rt", "rt-multi-thread"]}
